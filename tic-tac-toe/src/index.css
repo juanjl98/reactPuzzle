@@ -12,13 +12,21 @@ body {
 }
 
 .square {
-  background-color: rgb(225, 0, 255);
+  background-color: rgb(227, 197, 51);
   margin: 10px;
   padding: 20px;
   width: 100px;
   height: 100px;
   text-align: center;
-  line-height: 100px;
+  line-height: 50px;
+  font-size: 85px;
+  border: 0;
+  color:white;
+}
+
+.square:focus {
+  outline: none;
+  background-color: #222;
 }
 
 /*

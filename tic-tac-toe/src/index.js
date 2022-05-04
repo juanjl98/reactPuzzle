@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
+
 
 
 /*
@@ -16,14 +17,21 @@ También podemos usar CSS con la propiedad className
 */
 
 
-const Square = () => {
+const Square = (props) => {
   return (
-    <div className="square">
-      X
-    </div>
+    <button className="square" onClick={() => alert(`square ${props.value} clicked`)}>
+      {props.value}
+    </button>
   )
 }
+
 const Board = () => {
+
+  const renderSquare = (i) => {
+    return ( 
+      <Square value={i}/> //Así se pasan los props.
+      )
+  }
   return (
     <div style={{
       backgroundColor: 'skyblue',
@@ -32,13 +40,13 @@ const Board = () => {
     }}>
       Board
       <div className = "board-row">
-        <Square/><Square/><Square/>
+        {renderSquare(0)}{renderSquare(1)}{renderSquare(2)}
       </div>
       <div className = "board-row">
-        <Square/><Square/><Square/>
+        {renderSquare(3)}{renderSquare(4)}{renderSquare(5)}
       </div>
       <div className = "board-row">
-        <Square/><Square/><Square/>
+        {renderSquare(6)}{renderSquare(7)}{renderSquare(8)}
       </div>
     </div>
   )
