@@ -1,2 +1,2 @@
 # reactPuzzle
-Siguiendo un último tutorial para aprender (https://itnext.io/react-native-candy-crush-clone-c41a797fed0a).
+Recreación de un proyecto NextJS y ReactJS (https://blog.logrocket.com/build-tic-tac-toe-game-react-hooks/).
