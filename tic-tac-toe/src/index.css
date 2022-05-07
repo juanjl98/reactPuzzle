@@ -1,7 +1,7 @@
 body {
-  background-color: #444;
-  color: white;
-  margin: 5%;
+  background-color: #F1DDBF;
+  color: black;
+  margin: 0%;
   font: 32px "Century Gothic", Futura, sans-serif;
 }
 
@@ -12,7 +12,7 @@ body {
 }
 
 .square {
-  background-color: rgb(227, 197, 51);
+  background-color: #F05454;
   margin: 10px;
   padding: 20px;
   width: 100px;
@@ -21,12 +21,13 @@ body {
   line-height: 50px;
   font-size: 85px;
   border: 0;
+  border-radius: 25px;
   color:white;
 }
 
 .square:focus {
   outline: none;
-  background-color: #222;
+  background-color: #b33b3b;
 }
 
 /*
@@ -35,4 +36,46 @@ body {
 .board-row {
   display: flex;
   flex-flow: row nowrap;
+}
+
+footer {
+  font: 12px "Century Gothic", Futura, sans-serif;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+a {
+  color: red;
+}
+p {
+  text-align: center;
+}
+
+.tablero {
+  text-align: center;
+  font-size: 25px;
+  background-color: #30475E;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.turno {
+  background-color: #F1DDBF;
+  border-radius: 25px;
+}
+
+.imageHeader {
+  position:sticky;
+  top: 0%;
+}
+
+.ficha {
+  position: relative;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
